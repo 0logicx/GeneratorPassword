@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PasswordGenerator</title>
+    <link rel="stylesheet" href="gen.css" />
+  </head>
+  <body>
+    <div class="general">
+      <h1 class="general__text">Генератор паролей</h1>
+      <div class="generator__settings">
+        <div class="generator__setting-tittle">Настройка пароля</div>
+        <div class="generator__setting-content">
+          <div>
+            <label class="generator__setting-name">Длина</label>
+            <input
+              id="length"
+              type="number"
+              class="generator__setting-input"
+              value="10"
+              min="1"
+              max="16"
+            />
+          </div>
+        </div>
+        <div class="switches">
+          <div class="form-check form-switch">
+            <label
+              id="uppercase"
+              class="uppClaster"
+              for="flexSwitchCheckDefault"
+            >
+              <input class="form-check-input" type="checkbox" role="switch" />
+              Использовать заглавные буквы</label
+            >
+          </div>
+          <div class="form-check form-switch">
+            <label
+              id="numbers"
+              class="numberClaster"
+              for="flexSwitchCheckDisabled"
+            >
+              <input class="form-check-input" type="checkbox" role="switch" />
+              Испоьзовать цифры</label
+            >
+          </div>
+          <div class="form-check form-switch">
+            <label
+              id="symbols"
+              class="specialClaster"
+              for="flexSwitchCheckCheckedDisabled"
+            >
+              <input class="form-check-input" type="checkbox" role="switch" />
+              Использовать специальные символы</label
+            >
+          </div>
+        </div>
+      </div>
+      <div id="button" class="generatorpasswordbutton">Сгенерировать</div>
+      <div id="password" class="generatorinput">sas</div>
+    </div>
+
+    <script src="index.js"></script>
+  </body>
+</html>
